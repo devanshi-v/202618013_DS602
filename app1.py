@@ -130,7 +130,7 @@ st.markdown("""
 # Data loading (cached)
 @st.cache_data
 def load_data():
-    return pd.read_csv("insurance.csv")
+    return pd.read_csv("data/insurance.csv")
 
 try:
     df = load_data()
