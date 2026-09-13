@@ -8,17 +8,17 @@ This project analyzes medical insurance charges using demographic, health, and p
 
 <h2>Objectives </h2>
 
-Perform descriptive and exploratory statistical analysis.
+- Perform descriptive and exploratory statistical analysis.
 
-Examine relationships between numerical and categorical variables.
+- Examine relationships between numerical and categorical variables.
 
-Apply parametric and non-parametric hypothesis tests.
+- Apply parametric and non-parametric hypothesis tests.
 
-Fit and interpret a Multiple Linear Regression model using statsmodels.api.OLS.
+- Fit and interpret a Multiple Linear Regression model using statsmodels.api.OLS.
 
-Evaluate residuals and multicollinearity.
+- Evaluate residuals and multicollinearity.
 
-Build an interactive Streamlit dashboard with live predictions and a 95% prediction interval.
+- Build an interactive Streamlit dashboard with live predictions and a 95% prediction interval.
 
 <h2>Dataset </h2>
 
