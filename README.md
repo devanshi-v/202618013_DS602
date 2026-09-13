@@ -127,6 +127,10 @@ The model explains approximately **75.1% of the variation in medical insurance c
 
 ## Streamlit Dashboard
 
+Medical Insurance Cost Analysis- streamlit:
+
+https://202618013ds602.streamlit.app/
+
 The interactive dashboard is organized into three tabs.
 
 ### Tab 1 — Data Exploration
