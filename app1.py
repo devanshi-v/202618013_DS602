@@ -130,7 +130,7 @@ st.markdown("""
 # Data loading (cached)
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/insurance.csv")
+    return pd.read_csv("insurance.csv")
 
 try:
     df = load_data()
@@ -468,4 +468,51 @@ with tab3:
         st.caption("VIF > 5–10 typically signals problematic multicollinearity between predictors.")
 
     with st.expander("📄 Full Regression Summary"):
-        st.text(model.summary())
+
+        # Get the three tables from the statsmodels summary
+        summary_html = model.summary().tables[0].as_html()
+        coef_html = model.summary().tables[1].as_html()
+        diagnostics_html = model.summary().tables[2].as_html()
+
+        # CSS for table borders
+        table_style = """
+        <style>
+        .regression-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .regression-table th,
+        .regression-table td {
+            border: 1px solid #cccccc;
+            padding: 8px 10px;
+            text-align: center;
+        }
+
+        .regression-table th {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+
+        .regression-table tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+        </style>
+        """
+
+        # Apply CSS
+        st.markdown(table_style, unsafe_allow_html=True)
+
+        # Change statsmodels table class
+        def style_table(html):
+            return html.replace(
+                '<table class="simpletable">',
+                '<table class="regression-table">'
+            )
+
+        # Display all three regression tables
+        st.markdown(style_table(summary_html), unsafe_allow_html=True)
+        st.markdown(style_table(coef_html), unsafe_allow_html=True)
+        st.markdown(style_table(diagnostics_html), unsafe_allow_html=True)
