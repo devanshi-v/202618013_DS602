@@ -24,86 +24,28 @@ This project analyzes medical insurance charges using demographic, health, and p
 
 The project uses the Medical Insurance Costs dataset.
 
-Dataset Summary
+### Dataset Summary
 
-Item
+| Item | Details |
+|---|---|
+| Original observations | 1,338 |
+| Variables | 7 |
+| Duplicate rows | 1 |
+| Observations after cleaning | 1,337 |
+| Missing values | None |
+| Target variable | `charges` |
 
-Details
+### Features
 
-Original observations
-
-1,338
-
-Variables
-
-7
-
-Duplicate rows
-
-1
-
-Observations after cleaning
-
-1,337
-
-Missing values
-
-None
-
-Target variable
-
-charges
-
-Features
-
-Feature
-
-Description
-
-Type
-
-age
-
-Age of the policyholder
-
-Numerical
-
-sex
-
-Sex of the policyholder
-
-Categorical
-
-bmi
-
-Body Mass Index
-
-Numerical
-
-children
-
-Number of children/dependents
-
-Numerical
-
-smoker
-
-Smoking status
-
-Categorical
-
-region
-
-Residential region
-
-Categorical
-
-charges
-
-Medical insurance charges
-
-Numerical / Target
-
+| Feature | Description | Type |
+|---|---|---|
+| `age` | Age of the policyholder | Numerical |
+| `sex` | Sex of the policyholder | Categorical |
+| `bmi` | Body Mass Index | Numerical |
+| `children` | Number of children/dependents | Numerical |
+| `smoker` | Smoking status | Categorical |
+| `region` | Residential region | Categorical |
+| `charges` | Medical insurance charges | Numerical / Target |
 <h2>Exploratory Data Analysis </h2>
 
 The analysis includes descriptive statistics, histograms with KDE, box plots, scatter plots, categorical analysis, and a correlation heatmap.
