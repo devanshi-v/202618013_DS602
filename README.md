@@ -34,13 +34,13 @@ The project uses the **Medical Insurance Costs** dataset.
 
 | Feature | Description | Type |
 |---|---|---|
-| `age` | Age of the policyholder | Numerical |
-| `sex` | Sex of the policyholder | Categorical |
-| `bmi` | Body Mass Index | Numerical |
-| `children` | Number of children/dependents | Numerical |
-| `smoker` | Smoking status | Categorical |
-| `region` | Residential region | Categorical |
-| `charges` | Medical insurance charges | Numerical / Target |
+| age | Age of the policyholder | Numerical |
+| sex | Sex of the policyholder | Categorical |
+| bmi | Body Mass Index | Numerical |
+| children | Number of children/dependents | Numerical |
+| smoker | Smoking status | Categorical |
+| region | Residential region | Categorical |
+| charges | Medical insurance charges | Numerical / Target |
 
 ## Exploratory Data Analysis
 
@@ -93,9 +93,8 @@ A Multiple Linear Regression model was fitted using `statsmodels.api.OLS` after 
 
 **Model:**
 
-```text
+text
 charges ~ age + bmi + children + sex + smoker + region
-```
 
 ### Model Performance
 
