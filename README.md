@@ -6,7 +6,7 @@ An end-to-end Data Science project combining exploratory data analysis, statisti
 
 This project analyzes medical insurance charges using demographic, health, and policy-related variables. It identifies factors associated with charges, tests differences between groups, fits an OLS regression model, evaluates model assumptions, and presents the results through an interactive dashboard.
 
-Objectives
+<h2>Objectives </h2>
 
 Perform descriptive and exploratory statistical analysis.
 
@@ -20,7 +20,7 @@ Evaluate residuals and multicollinearity.
 
 Build an interactive Streamlit dashboard with live predictions and a 95% prediction interval.
 
-Dataset
+<h2>Dataset </h2>
 
 The project uses the Medical Insurance Costs dataset.
 
@@ -104,7 +104,7 @@ Medical insurance charges
 
 Numerical / Target
 
-Exploratory Data Analysis
+<h2>Exploratory Data Analysis </h2>
 
 The analysis includes descriptive statistics, histograms with KDE, box plots, scatter plots, categorical analysis, and a correlation heatmap.
 
@@ -182,7 +182,7 @@ Charges
 
 Medical charges show noticeable positive skewness, with skewness of approximately 1.515.
 
-Hypothesis Testing
+<h2>Hypothesis Testing </h2>
 
 All hypothesis tests use a significance level of α = 0.05.
 
@@ -292,7 +292,7 @@ Region
 
 Southeast and Southwest are significant relative to the reference region
 
-Regression Diagnostics
+<h2>Regression Diagnostics </h2>
 
 Residuals vs Fitted: Used to inspect linearity and changing variance.
 
@@ -302,7 +302,7 @@ Jarque-Bera: Statistic = 716.55, p-value = 2.527 × 10⁻¹⁵⁶, indicating si
 
 VIF: Maximum VIF is approximately 1.65, indicating no serious multicollinearity.
 
-Streamlit Dashboard
+<h2>Streamlit Dashboard </h2>
 
 The interactive dashboard is organized into three tabs.
 
@@ -348,25 +348,7 @@ VIF table
 
 OLS regression summary
 
-Technologies Used
-
-Python
-
-Pandas — data manipulation
-
-NumPy — numerical operations
-
-Matplotlib & Seaborn — visualization
-
-SciPy — hypothesis testing
-
-Statsmodels — OLS regression and diagnostics
-
-Streamlit — interactive dashboard
-
-Jupyter Notebook — analysis and experimentation
-
-Key Findings
+<h2>Key Findings </h2>
 
 Smoking status has a strong association with medical insurance charges.
 
